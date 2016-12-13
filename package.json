@@ -4,7 +4,7 @@
   "description": "A show case of a continuous integration environment with Travis CI",
   "main": "server/index.js",
   "scripts": {
-    "test": "karma start",
+    "test": "karma start"
   },
   "author": "orencio.rodolfo",
   "license": "ISC",
