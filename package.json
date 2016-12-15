@@ -2,10 +2,12 @@
   "name": "workflow-demo",
   "version": "1.0.0",
   "description": "A show case of a continuous integration environment with Travis CI",
-  "main": "server/index.js",
+  "main": "src/server/index.js",
   "scripts": {
     "test": "karma start",
-    "start": "node server/index.js"
+    "start": "node src/server/index.js",
+    "build": "webpack",
+    "build:watch": "webpack-dev-server --inline --hot"
   },
   "author": "orencio.rodolfo",
   "license": "ISC",
@@ -15,9 +17,19 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.1.0",
-    "karma-phantomjs-launcher": "^1.0.2"
+    "karma-phantomjs-launcher": "^1.0.2",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
-    "express": "^4.14.0"
+    "autoprefixer": "^6.5.4",
+    "css-loader": "^0.26.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.24.1",
+    "jquery": "^3.1.1",
+    "precss": "^1.4.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
   }
 }
