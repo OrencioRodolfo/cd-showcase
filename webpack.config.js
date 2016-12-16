@@ -29,8 +29,11 @@ module.exports = {
 				loader: 'html'
 			},
 			{
-        test: /\.css$/,
-				loader: ExtractTextPlugin.extract('style-loader?source-map', 'css-loader?source-map')
+        test: /\.pcss$/,
+				loader: ExtractTextPlugin.extract(
+					'style-loader', 
+					'css-loader!postcss-loader'
+				)
       }
 		]
   },
