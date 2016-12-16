@@ -34,7 +34,15 @@ module.exports = {
 					'style-loader', 
 					'css-loader!postcss-loader'
 				)
-      }
+      },
+			{
+				test: /\.js$/,
+				exclude: /(node_modules)/,
+				loader: 'babel-loader',
+				query: {
+					presets: ['es2015']
+				}
+			}
 		]
   },
 	plugins: [
