@@ -1,4 +1,4 @@
 require("./../style/main.pcss")
 const $ = require('jquery');
 // $('body').html('asdasdasdasd');
-console.log('hello');
+console.log('hello you');

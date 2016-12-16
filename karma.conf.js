@@ -1,3 +1,6 @@
+const webpack = require('./webpack.config.js');
+const envs = require('./.envs.config.js');
+
 // Karma configuration
 // Generated on Mon Dec 12 2016 20:22:22 GMT+0000 (WET)
 
@@ -27,8 +30,10 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      // add webpack as preprocessor
+      [webpack.entry]: ['webpack']
     },
-
+    webpack,
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -60,7 +65,7 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: true,
+    singleRun: envs.prod,
 
     // Concurrency level
     // how many browser should be started simultaneous

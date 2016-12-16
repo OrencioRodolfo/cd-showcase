@@ -4,7 +4,9 @@
   "description": "A show case of a continuous integration environment with Travis CI",
   "main": "src/server/index.js",
   "scripts": {
-    "test": "karma start",
+    "test": "karma start --prod",
+    "postinstall": "webpack --prod",
+    "test:watch": "karma start",
     "start": "node src/server/index.js",
     "build": "webpack",
     "build:watch": "webpack-dev-server --inline --hot"
@@ -28,9 +30,11 @@
     "css-loader": "^0.26.1",
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "flagr": "^1.0.1",
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.24.1",
     "jquery": "^3.1.1",
+    "karma-webpack": "^1.8.0",
     "postcss-loader": "^1.2.1",
     "precss": "^1.4.0",
     "style-loader": "^0.13.1",
