@@ -20,7 +20,10 @@ module.exports = {
 		extensions: ['', '.js', '.css'],
 		modulesDirectories: [
 			'node_modules'
-		]        
+		],
+		alias: {
+			'vue$': 'vue/dist/vue.common.js'
+		}
 	},
 	module: {
 		loaders: [
