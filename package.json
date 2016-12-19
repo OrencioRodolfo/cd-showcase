@@ -9,7 +9,7 @@
     "test:watch": "karma start",
     "start": "node src/server/index.js",
     "build": "webpack",
-    "build:watch": "webpack-dev-server --inline --hot"
+    "build:watch": "webpack-dev-server --inline --hot --host 0.0.0.0"
   },
   "author": "orencio.rodolfo",
   "license": "ISC",
