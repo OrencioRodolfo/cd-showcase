@@ -17,3 +17,24 @@
 .a-text-xl {
   font-size: $text-xl;
 }
+
+.a-btn {
+  display: inline-block;
+  background: #626262;
+  color: $light-text;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 0;
+  text-align: center;
+  transition: background 0.2s ease;
+  cursor: pointer;
+
+  &.primary {
+    background: $primary-color;
+  }
+
+  &:hover {
+    background: $primary-color-dark;
+  }
+}
