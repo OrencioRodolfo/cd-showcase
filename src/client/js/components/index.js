@@ -1,5 +1,9 @@
-import company from './company';
+import CompanyLogo from './company-logo';
+import Home from './home';
+import NotFound from './not-found';
 
 export {
-  company
+  Home,
+  CompanyLogo,
+  NotFound,
 }
