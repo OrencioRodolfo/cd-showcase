@@ -1,19 +1,18 @@
-require('./../style/main.pcss');
+import style from './../style/main.pcss';
 import Vue from 'vue';
+import { company } from './components';
 
-// Define a new component called todo-item
-Vue.component('company', {
-  template: `
-    <div class="m-img-legend m-company">
-      <img src="img/exictos.png" class="a-img a-company-img"/>
-      <span class="a-legend a-text-xl">Exictos</span>
-    </div>
-  `
-});
+/**
+ * Components
+ */
+Vue.component('company-logo', company);
 
+
+/**
+ * Application
+ */
 const app = new Vue({
   el: '#app',
   data: {
-    message: `You loaded this page on ${new Date()}`,
   }
 });
