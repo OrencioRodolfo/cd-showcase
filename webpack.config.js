@@ -34,7 +34,7 @@ module.exports = {
 			{
         test: /\.pcss$/,
 				loader: ExtractTextPlugin.extract(
-					'style-loader', 
+					'style-loader',
 					'css-loader!postcss-loader'
 				)
       },

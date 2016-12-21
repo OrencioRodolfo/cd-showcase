@@ -18,7 +18,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'src/client/js/**/*.js'
+      webpack.entry,
+      'src/client/js/**/*.spec.js'
     ],
 
 
