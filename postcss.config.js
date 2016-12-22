@@ -9,9 +9,11 @@ module.exports = {
   plugins: [
     require('postcss-import')({ /* ...options */ }),
     require('postcss-nested')({ /* ...options */ }),
-    require('postcss-simple-vars')({ /* ...options */ }),
-    require('autoprefixer')({ /* ...options */ }),
+    require('postcss-mixins'),
+    require('postcss-conditionals'),
     require('postcss-map')({ maps: [colorPalettes, fontSettings, screenSizes] }),
+    require('postcss-simple-vars')({ /* ...options */ }),
+    require('autoprefixer')('last 5 versions'),
     require('postcss-functions')({
       functions: {
         'get-color': colorFunction,

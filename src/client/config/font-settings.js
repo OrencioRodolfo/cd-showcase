@@ -3,19 +3,19 @@ const baseLineHeight = baseFontSize * 1.25
 
 const fontSizes = {
   sm: {
-    'font-size': '.75rem',
-    'line-height': `${baseLineHeight}rem`,
-  },
-  normal: {
     'font-size': '1rem',
     'line-height': `${baseLineHeight}rem`,
   },
+  normal: {
+    'font-size': '1.77rem',
+    'line-height': `${baseLineHeight}rem`,
+  },
   lg: {
-    'font-size': '1.33rem',
+    'font-size': '1.77rem',
     'line-height': `${baseLineHeight * 1.5}rem`,
   },
   xl: {
-    'font-size': '1.777rem',
+    'font-size': '2rem',
     'line-height': `${baseLineHeight * 1.5}rem`,
   },
 }
