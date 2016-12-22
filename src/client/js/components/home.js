@@ -3,7 +3,7 @@ export default { template: `
     <company-logo></company-logo>
     <p>A simple demo simulating a continuous delivery workflow</p>
     <br>
-    <a href="/about">
+    <a href="/simulate">
       <button class="a-btn primary">Simulate</button>
     </a>
   </div>
