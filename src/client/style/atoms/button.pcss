@@ -1,7 +1,7 @@
 .a-btn {
   display: inline-block;
-  background: #626262;
-  color: $light-text;
+  background: get-color();
+  color: get-color(text, primary);
   line-height: 1;
   font-weight: bold;
   padding: 1rem 2rem;
@@ -11,10 +11,10 @@
   cursor: pointer;
 
   &.primary {
-    background: $primary-color;
+    background: get-color();
   }
 
   &:hover {
-    background: $primary-color-dark;
+    background: get-color(primary, dark);
   }
 }
