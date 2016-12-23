@@ -1,11 +1,11 @@
 module.exports = function pageTheme(theme) {
   const themes = {
     one: {
-      gender: 'light',
+      gender: 'dark',
       primary: {
-        base: '#74969f',
-        light: '#e1eff2',
-        dark: '#496269',
+        base: '#00b3ea',
+        light: '#a8eaff',
+        dark: '#087da2',
       },
       accent: {
         base: '#b04638',
@@ -13,7 +13,7 @@ module.exports = function pageTheme(theme) {
         dark: '#933a2f',
       },
       background: {
-        base: '#fff',
+        base: '#626262',
         light: '#fff',
         dark: '#fff',
       },
