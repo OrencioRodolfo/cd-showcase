@@ -36,23 +36,7 @@ module.exports = function pageTheme(theme) {
         dark: '#252423',
       },
     },
-  }
+  };
 
-  const outputTheme = themes[theme] || themes.one
-
-  if (outputTheme.gender === 'light') {
-    outputTheme.text = {
-      primary: '#74969f',
-      secondary: '#b04638',
-      disabled: '#e1eff2',
-    }
-  } else {
-    outputTheme.text = {
-      primary: '#e4e8e3',
-      secondary: '#b04638',
-      disabled: '#b04638',
-    }
-  }
-
-  return outputTheme
+  return themes[theme] || themes.one;
 }

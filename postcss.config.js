@@ -1,9 +1,10 @@
 const configPath = './src/client/config';
-const theme = 'one'
-const colorPalettes = require(`./${configPath}/color-palettes.js`)(theme)
-const colorFunction = require(`./${configPath}/color-fn.js`)(theme)
-const fontSettings = require(`./${configPath}/font-settings.js`)
-const screenSizes = require(`./${configPath}/screen-sizes.js`)
+const theme = 'one';
+const colorPalettes = require(`./${configPath}/color-palettes.js`)(theme);
+const colorFunction = require(`./${configPath}/color-palette-fn.js`)(theme);
+const textColorFunction = require(`./${configPath}/text-color-fn.js`);
+const fontSettings = require(`./${configPath}/font-settings.js`);
+const screenSizes = require(`./${configPath}/screen-sizes.js`);
 
 module.exports = {
   plugins: [
@@ -17,6 +18,7 @@ module.exports = {
     require('postcss-functions')({
       functions: {
         'get-color': colorFunction,
+        'text-color': textColorFunction,
       },
     }),
   ]
