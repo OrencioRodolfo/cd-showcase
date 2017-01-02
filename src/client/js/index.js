@@ -1,12 +1,12 @@
 import style from './../style/main.pcss';
 import Vue from 'vue';
-import { company } from './components';
+import routes from './routes';
+import { CompanyLogo, NotFound } from './components';
 
 /**
  * Components
  */
-Vue.component('company-logo', company);
-
+Vue.component('company-logo', CompanyLogo);
 
 /**
  * Application
@@ -14,5 +14,14 @@ Vue.component('company-logo', company);
 const app = new Vue({
   el: '#app',
   data: {
+    currentRoute: window.location.pathname
+  },
+  computed: {
+    ViewComponent () {
+      return routes[this.currentRoute] || NotFound
+    }
+  },
+  render (h) {
+    return h(this.ViewComponent)
   }
 });

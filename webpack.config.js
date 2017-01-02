@@ -25,6 +25,7 @@ module.exports = {
 			'vue$': 'vue/dist/vue.common.js'
 		}
 	},
+  devtool: 'source-map',
 	module: {
 		loaders: [
 			{
@@ -35,7 +36,7 @@ module.exports = {
         test: /\.pcss$/,
 				loader: ExtractTextPlugin.extract(
 					'style-loader',
-					'css-loader!postcss-loader'
+					'css-loader?sourceMap!postcss-loader'
 				)
       },
 			{
