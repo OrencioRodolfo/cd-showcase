@@ -32,6 +32,7 @@ module.exports = {
 				test: /\.html$/,
 				loader: 'html'
 			},
+      { test: /\.png$/, loader: "url-loader?mimetype=image/png" },
 			{
         test: /\.pcss$/,
 				loader: ExtractTextPlugin.extract(
