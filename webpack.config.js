@@ -21,9 +21,6 @@ module.exports = {
 		modulesDirectories: [
 			'node_modules'
 		],
-		alias: {
-			'vue$': 'vue/dist/vue.common.js'
-		}
 	},
   devtool: 'source-map',
 	module: {
