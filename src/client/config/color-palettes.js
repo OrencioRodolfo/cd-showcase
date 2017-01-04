@@ -15,7 +15,7 @@ module.exports = function pageTheme(theme) {
       background: {
         base: '#626262',
         light: '#fff',
-        dark: '#fff',
+        dark: '#1d1d1b',
       },
     },
     two: {
