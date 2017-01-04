@@ -7,20 +7,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
   <body>
-    <img src="img/exictos.png" alt="">
-    <div class="panel panel-default">
-      <div class="panel-heading">Panel heading without title</div>
-      <div class="panel-body">
-        Panel content
-      </div>
-    </div>
-
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Panel title</h3>
+        Calculadora
       </div>
       <div class="panel-body">
-        Panel content
+        <form>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <input type="number" class="form-control" onkeyup="calc('sum')" id="sum-first" placeholder="0">
+            </div>
+          </div>
+          <div class="col-xs-1 text-center">+</div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <input type="number" class="form-control" onkeyup="calc('sum')" id="sum-second" placeholder="0">
+            </div>
+          </div>
+          <div class="col-xs-1 text-center">=</div>
+          <div class="col-xs-1" id="sum-result">0</div>
+        </form>
+        <form>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <input type="number" class="form-control" onkeyup="calc('decrement')" id="decrem-first" placeholder="0">
+            </div>
+          </div>
+          <div class="col-xs-1 text-center">-</div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <input type="number" class="form-control" onkeyup="calc('decrement')" id="decrem-second" placeholder="0">
+            </div>
+          </div>
+          <div class="col-xs-1 text-center">=</div>
+          <div class="col-xs-1" id="decrement-result">0</div>
+        </form>
       </div>
     </div>
   </body>
