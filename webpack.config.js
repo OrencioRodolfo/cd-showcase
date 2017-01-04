@@ -29,6 +29,7 @@ module.exports = {
 				test: /\.html$/,
 				loader: 'html'
 			},
+      { test: /\.css$/, loader: "style-loader!css-loader?sourceMap" },
       { test: /\.png$/, loader: "url-loader?mimetype=image/png" },
 			{
 				test: /\.js$/,
