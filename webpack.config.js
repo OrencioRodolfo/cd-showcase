@@ -31,13 +31,6 @@ module.exports = {
 			},
       { test: /\.png$/, loader: "url-loader?mimetype=image/png" },
 			{
-        test: /\.pcss$/,
-				loader: ExtractTextPlugin.extract(
-					'style-loader',
-					'css-loader?sourceMap!postcss-loader'
-				)
-      },
-			{
 				test: /\.js$/,
 				exclude: /(node_modules)/,
 				loader: 'babel-loader',
