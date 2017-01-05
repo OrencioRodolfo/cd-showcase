@@ -13,34 +13,56 @@
       </div>
       <div class="panel-body">
         <form>
-          <div class="col-xs-4">
-            <div class="form-group">
-              <input type="number" class="form-control" onkeyup="calc('sum')" id="sum-first" placeholder="0">
+          <!-- Sum -->
+          <section>
+            <div class="col-xs-4">
+              <div class="form-group">
+                <input type="number" class="form-control" onkeyup="calc('sum')" id="sum-first" placeholder="0">
+              </div>
             </div>
-          </div>
-          <div class="col-xs-1 text-center">+</div>
-          <div class="col-xs-4">
-            <div class="form-group">
-              <input type="number" class="form-control" onkeyup="calc('sum')" id="sum-second" placeholder="0">
+            <div class="col-xs-1 text-center">+</div>
+            <div class="col-xs-4">
+              <div class="form-group">
+                <input type="number" class="form-control" onkeyup="calc('sum')" id="sum-second" placeholder="0">
+              </div>
             </div>
-          </div>
-          <div class="col-xs-1 text-center">=</div>
-          <div class="col-xs-1" id="sum-result">0</div>
-        </form>
-        <form>
-          <div class="col-xs-4">
-            <div class="form-group">
-              <input type="number" class="form-control" onkeyup="calc('subtract')" id="subtract-first" placeholder="0">
+            <div class="col-xs-1 text-center">=</div>
+            <div class="col-xs-1" id="sum-result">0</div>
+          </section>
+
+          <!-- Subtract -->
+          <section>
+            <div class="col-xs-4">
+              <div class="form-group">
+                <input type="number" class="form-control" onkeyup="calc('subtract')" id="subtract-first" placeholder="0">
+              </div>
             </div>
-          </div>
-          <div class="col-xs-1 text-center">-</div>
-          <div class="col-xs-4">
-            <div class="form-group">
-              <input type="number" class="form-control" onkeyup="calc('subtract')" id="subtract-second" placeholder="0">
+            <div class="col-xs-1 text-center">-</div>
+            <div class="col-xs-4">
+              <div class="form-group">
+                <input type="number" class="form-control" onkeyup="calc('subtract')" id="subtract-second" placeholder="0">
+              </div>
             </div>
-          </div>
-          <div class="col-xs-1 text-center">=</div>
-          <div class="col-xs-1" id="subtract-result">0</div>
+            <div class="col-xs-1 text-center">=</div>
+            <div class="col-xs-1" id="subtract-result">0</div>
+          </section>
+
+          <!-- Divide -->
+          <section>
+            <div class="col-xs-4">
+              <div class="form-group">
+                <input type="number" class="form-control" onkeyup="calc('divide')" id="divide-first" placeholder="1">
+              </div>
+            </div>
+            <div class="col-xs-1 text-center">/</div>
+            <div class="col-xs-4">
+              <div class="form-group">
+                <input type="number" class="form-control" onkeyup="calc('divide')" id="divide-second" placeholder="1">
+              </div>
+            </div>
+            <div class="col-xs-1 text-center">=</div>
+            <div class="col-xs-1" id="divide-result">1</div>
+          </section>
         </form>
       </div>
     </div>
