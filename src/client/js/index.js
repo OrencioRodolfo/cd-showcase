@@ -8,8 +8,8 @@ function getInputValues() {
       second: parseFloat(document.querySelector('#sum-second').value),
     },
     decremInputs: {
-      first: parseFloat(document.querySelector('#decrem-first').value),
-      second: parseFloat(document.querySelector('#decrem-second').value),
+      first: parseFloat(document.querySelector('#subtract-first').value),
+      second: parseFloat(document.querySelector('#subtract-second').value),
     }
   };
 }
@@ -19,9 +19,9 @@ window.calc = function calc(operation) {
   if (operation === 'sum') {
     const result = calculator.sum(sumInputs.first, sumInputs.second);
     document.querySelector('#sum-result').innerHTML = result;
-  } else if(operation === 'decrement') {
-    const result = calculator.decrement(decremInputs.first, decremInputs.second);
-    document.querySelector('#decrement-result').innerHTML = result;
+  } else if(operation === 'subtract') {
+    const result = calculator.subtract(decremInputs.first, decremInputs.second);
+    document.querySelector('#subtract-result').innerHTML = result;
   }
 }
 
