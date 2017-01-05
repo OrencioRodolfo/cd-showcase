@@ -14,12 +14,16 @@ function getInputValues() {
     divideInputs: {
       first: parseFloat(document.querySelector('#divide-first').value),
       second: parseFloat(document.querySelector('#divide-second').value),
+    },
+    multiplyInputs: {
+      first: parseFloat(document.querySelector('#multiply-first').value),
+      second: parseFloat(document.querySelector('#multiply-second').value),
     }
   };
 }
 
 window.calc = function calc(operation) {
-  const { sumInputs, subtractInputs, divideInputs } = getInputValues();
+  const { sumInputs, subtractInputs, divideInputs, multiplyInputs } = getInputValues();
   let result;
   let element;
 
@@ -36,6 +40,10 @@ window.calc = function calc(operation) {
     case 'divide':
       result = calculator.divide(divideInputs.first, divideInputs.second);
       element = '#divide-result';
+      break;
+    case 'multiply':
+      result = calculator.multiply(multiplyInputs.first, multiplyInputs.second);
+      element = '#multiply-result';
       break;
     default:
      throw new Error('Must specify the operation');
