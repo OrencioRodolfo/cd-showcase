@@ -17,7 +17,7 @@ function subtract(a, b) {
 }
 
 /**
- * Subtracts two numbers
+ * Divides two numbers
  */
 function divide(a, b) {
   const param1 = a || 1;
