@@ -26,4 +26,11 @@ describe('Math operation:', function() {
       expect(result).toEqual(0.5);
     });
   });
+
+  describe('Multiply', function() {
+    it('should return 8 for 2 * 4', function() {
+      const result = calculator.multiply(2, 4);
+      expect(result).toEqual(8);
+    });
+  });
 });
