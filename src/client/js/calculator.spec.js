@@ -26,11 +26,4 @@ describe('Math operation:', function() {
       expect(result).toEqual(0.5);
     });
   });
-
-  describe('Multiply', function() {
-    it('should return 6 for 2 * 3', function() {
-      const result = calculator.multiply(2, 3);
-      expect(result).toEqual(6);
-    });
-  });
 });
